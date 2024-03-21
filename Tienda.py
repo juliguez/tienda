@@ -2,6 +2,20 @@ from Producto import Producto
 
 class Tienda:
 
+    """-------------------------------------------------------------------------------
+    # ATRIBUTOS 
+    -------------------------------------------------------------------------------"""
 
-    def ejemplo(self):
-        return Producto.__PRECIO_MAXIMO
+    __productos1 = None
+    __productos2 = None
+    __productos3 = None
+    __productos4 = None
+    
+
+    """-------------------------------------------------------------------------------
+    # METODOS 
+    -------------------------------------------------------------------------------"""
+
+    def getProducto1(self):
+        return self.__productos1
+    

@@ -1,5 +1,10 @@
 from enum import Enum
 
+"""-------------------------------------------------------------------------------
+# ENUMERACIONES
+-------------------------------------------------------------------------------"""
+
+
 class Tipo(Enum):
 
     PAPELERIA = 1 
@@ -19,8 +24,36 @@ class Producto:
     """-------------------------------------------------------------------------------
     # ATRIBUTOS 
     -------------------------------------------------------------------------------"""
+    __nombre = None
+    __tipo = Enum('Tipo',('PAPELERIA', 'SUPERMERCADO', 'FARMACIA'))
+    __valorUnitario = 0.0
+    __cantidadBodega = 0
+    __cantidadMinima = 0
+    __cantidadUnidadesVedidas = 0
 
-    __tipo = Tipo()
+    """-------------------------------------------------------------------------------
+    # METODOS 
+    -------------------------------------------------------------------------------"""
 
-
-
+    def getNombre(self):
+        return self.__nombre
+    
+    def getTipo(self):
+        return self.__tipo
+    
+    def getvalorUnitario(self):
+        return self.__valorUnitario
+    
+    def getcantidadBodega(self):
+        return self.__cantidadBodega
+    
+    def getcantidadMinima(self):
+        return self.__cantidadMinima
+    
+    def getcantidadUnidadesVedidas(self):
+        return self.__cantidadUnidadesVedidas
+    
+    
+    
+    
+    
